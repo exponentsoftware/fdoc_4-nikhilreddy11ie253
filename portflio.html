@@ -1,0 +1,398 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Personal Website</title>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link href='style.css' rel='stylesheet'>
+<head>
+    <!--using FontAwesome---------------->
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  </head>
+	<!--style----->
+	<style>
+
+        body{
+            font-family:poppins;
+	background-color:rgb(157, 255, 0);
+	margin:0px;
+	padding:0px;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+section{
+	width:100%;
+	height:95vh;
+	background-image:url("../images/bg.png");
+	background-size:cover;
+	background-repeat:no-repeat;
+	position: relative;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	height:60px;
+	background-color:#ffffff;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+	padding:0px 5%;
+
+}
+nav ul{
+	display: flex;
+}
+.toggle{
+	display: none;
+}
+
+nav ul li a{
+	margin:30px;
+	font-family:myriad pro regular;
+	color:#505050;
+	font-size: 15px;
+	font-weight:700;
+}
+.logo{
+	font-family:RoadTest;
+	color:#000000;
+	font-size: 22px;
+}
+.active{
+	color:#2d2a2a;
+	font-weight:bold;
+}
+.model{
+	height:530px;
+	position:absolute;
+	bottom:40px;
+	left:75%;
+	transform: translateX(-75%);
+}
+.text-container p:nth-child(1){
+	font-family: calibri;
+	font-weight:bold;
+	color:#6d6d6d;
+	font-size:22px;
+}
+.text-container p:nth-child(2){
+	font-family:calibri;
+	font-weight:bold;
+	letter-spacing:1px;
+	color:#1a1a1a;
+	font-size:60px;
+
+}
+.text-container p:nth-child(3){
+	font-family: myriad pro regular;
+	color: #403e3e;
+	font-size:30px;
+	line-height:30px;
+}
+
+.text-container p{
+	margin:45px 0px 25px;
+	line-height:0px;
+}
+.text-container button{
+	width:130px;
+	height:42px;
+	border-radius:10px;
+	font-family:calibri;
+	font-weight:bold;
+	font-size: 14px;
+	outline:none;
+	margin:0px 10px;
+
+}
+.text-container{
+	position: absolute;
+	left:13%;
+	top:42%;
+	transform:translate(-13%,-42%);
+}
+.hire-btn{
+	border:2px solid #373636;
+	color:#373636;
+	background-color:transparent;
+
+}
+.down-cv{
+	background-color:#0B0B0B;
+	color:#fff;	
+	border:none;
+}
+button:active{
+	transform:scale(1.1);
+}
+.services{
+	height:600px;
+	background-color:#ffffff;
+	padding: 2% 10% 0px 10%;
+}
+.services-text p:nth-child(1){
+	font-family: calibri;
+	font-weight:bold;
+	color:#1d1c1c;
+	font-size:30px;
+	line-height:0px;
+}
+.services-text p:nth-child(2){
+	font-family:calibri;
+	font-weight: bold;
+	color:#3e3d3d;
+	font-size: 15px;
+	line-height: 5px;
+}
+.services-text p:nth-child(3){font-family:calibri;
+color:#7e7d7d;
+}
+.services-text{
+	width: 500px;
+	margin:50px 0px;
+}
+.box-container{
+	display:flex;
+	justify-content:space-between;
+}
+.box-1,.box-2,.box-3{
+	width: 300px;
+	height:320px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow:2px 2px 18px rgba(0,0,0,0.3);
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0px 4px;
+
+
+}
+
+.box-1{
+	background-image:url("../images/services-1.png");
+}
+.box-2{
+	background-image:url("../images/services-2.png");
+}
+.box-3{
+	background-image: url("../images/servies-3.png");
+}
+.box-1 span,
+.box-2 span,
+.box-3 span{
+	width:80px;
+	height:40px;
+	border-radius:50%;
+	background-color:#ffffff;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	font-family: calibri;
+	font-weight: bold;
+}
+.box-1 p:nth-child(2),
+.box-2 p:nth-child(2),
+.box-3 p:nth-child(2){
+	color:#FFFFFF;
+	font-family: calibri;
+	font-size: 23px;
+	line-height:0px;
+}
+.box-1 p:nth-child(3),
+.box-2 p:nth-child(3),
+.box-3 p:nth-child(3){
+	font-family: calibri;
+	color:#8F8F8F;
+	text-align:center;
+	width: 230px;
+	margin:0px 0px 20px 0px;
+}
+.box-1 button,
+.box-2 button,
+.box-3 button{
+	width:100px;
+	height:30px;
+	background-color:#FFFFFF;
+	border:none;
+	outline: none;
+	border-radius:5px;
+}
+footer p{
+	font-family: calibri;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	font-weight:bold;
+	color:#191919;
+	line-height:10px;
+}
+footer p:nth-child(2){
+	font-size: 16px;
+	color:#7e7d7d;
+	width:600px;
+	text-align: center;
+}
+footer{
+	height:300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.social-icons a{
+	width:40px;
+	height:40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:#e6e3e3;
+	margin:20px 10px;
+	border-radius:50%;
+}
+.social-icons{
+	display: flex;
+
+}
+.social-icons i,.social i{
+	color:#000000;
+}
+.social-icons a:hover{
+	background-color:#000000;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+	transition:all ease 0.5s;
+}
+.social-icons a:hover i,
+.social a:hover i{
+	color:#FFFFFF;
+	transition:all ease 0.5s;
+}
+
+.copyright{
+	color:#565555;
+	font-size: 12px;
+	position: absolute;
+	left:50%;
+	bottom:10px;
+	transform: translateX(-50%);
+}
+.social{
+	position: fixed;
+	top:50%;
+	right:0px;
+	transform:translateY(-50%);
+}
+.social a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:50px;
+	height:50px;
+	margin:0px;
+	padding: 0px;
+	line-height:0px;
+	background-color:#FFFFFF;
+	border:1px solid #CBCBCB;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+}
+.social a:hover{
+	background-color:#000000;
+	transition:all ease 0.5s;
+}
+.social i{
+	font-size:20px;
+	color:#2B2B2B;
+}
+	</style>
+
+</head>
+<body>
+    <section>
+        <!--navigation------------------------->
+        <nav>
+        <!--logo-->
+        <a href="#" class="logo">Nikhil Reddy</a>
+        <!--menu-->
+        <ul>
+        <li><a href="portflio.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+        <!--bars--------------->
+        <div class="toggle"></div>
+
+        </nav>
+      </section>
+      <div class="text-container">
+        <p>Hello,</p>
+        <p>I&#8217;AM NIKHIL Reddy</p>
+        <p>FrontEnd-Devolper </p>
+        <!-- <button class="hire-btn">Hire me</button> -->
+        <button class="down-cv">Download CV</button>
+
+    </div>
+<!--model---------------------->
+<div class="services ">
+    <!--text-->
+    <div class="services-text ">
+<p>Top 3 Projects</p>
+
+
+        </div>
+    <div class="box-container">
+    <!--1------------->
+        <div class="box-1">
+        <span>Ecommerce Clone</span>
+        <p class="heading">Ecommerce Clone</p>
+        <p class="details">Designed and developed  a Ecommerce Website with admin functionality & user perspective aspect.It is backed up with Rest Api with all needed functionalities .</p>
+
+        </div>
+   <!--2------------->
+        <div class="box-2">
+        <span>Imgur</span>
+        <p class="heading">Imgur</p>
+        <p class="details">Designed develped a Imgur Clone Website with admin functionality & user perspective aspect.It is backed up with Rest Api with all needed functionalities .</p>
+
+        </div>
+    <!--3------------->
+        <div class="box-3">
+        <span>Woo's With pups</span>
+        <p class="heading">Woo's With pups</p>
+        <p class="details">A special app which has been designed and developed for pet lovers.most of the people are dog lovers 
+			who can't have dogs at their home.people would be interested to have a dog but they are not ready to consider due to their busy schedule,for those I have built project is helped to adopt dog in their free time,</p>
+
+        </div>
+    </div>
+    <footer>
+        <!--heading-->
+     <p>Reach Out At:</p>
+        <!--paragraph-->
+
+
+        <!--social-->
+       <div class="social-icons">
+       <a href="#"><i class="fab fa-facebook-f"></i></a>
+       <a href="#"><i class="fab fa-twitter"></i></a>
+       <a href="#"><i class="fab fa-instagram"></i></a>
+       <a href="#"><i class="fab fa-github"></i></a>
+       </div>
+
+   </footer>
+       <!--social-attach-bar-->
+       <div class="social">
+       <a href="#"><i class="fab fa-facebook-f"></i></a>
+       <a href="#"><i class="fab fa-twitter"></i></a>
+       <a href="#"><i class="fab fa-instagram"></i></a>
+       <a href="#"><i class="fab fa-github"></i></a>
+       </div>
+</div>
+
+</body>
+</html> 
